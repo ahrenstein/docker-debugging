@@ -31,6 +31,10 @@ Why?
 ----
 Busybox was too simple for some of the debugging I needed to do. I wanted a container that I can test host headers with, but also have an interactive shell with some common packages and the ability to install more via apt-get should I need them.
 
+Availability
+------------
+This container is publicly available on [Docker Hub\(https://hub.docker.com/r/ahrenstein/debugging)
+
 Maintainers
 ----------
 1. [Matthew Ahrenstein](https://www.ahrenstein.com)
