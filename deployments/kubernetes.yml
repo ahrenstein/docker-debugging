@@ -1,0 +1,22 @@
+# ------------------- Debugging Deployment ------------------- #
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: debugging
+  namespace: kube-public
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: debugging
+  template:
+    metadata:
+      labels:
+        app: debugging
+    spec:
+      containers:
+        - name: debugging
+          image: ahrenstein/debugging:latest
+          ports:
+            - name: http
+              containerPort: 80
