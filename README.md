@@ -33,7 +33,7 @@ Busybox was too simple for some of the debugging I needed to do. I wanted a cont
 
 Availability
 ------------
-This container is publicly available on [Docker Hub\(https://hub.docker.com/r/ahrenstein/debugging)
+This container is publicly available on [Docker Hub](https://hub.docker.com/r/ahrenstein/debugging)
 
 Maintainers
 ----------
