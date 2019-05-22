@@ -3,7 +3,7 @@ LABEL maintainer = "Matthew Ahrenstein <matt@ahrenstein.com>"
 
 # Install packages needed
 RUN apt-get update
-RUN DEBIAN_FRONTEND=noninteractive apt-get -y install vim curl wget dnsutils apache2-utils apache2 libapache2-mod-php
+RUN DEBIAN_FRONTEND=noninteractive apt-get -y install vim curl wget dnsutils telnet apache2-utils apache2 libapache2-mod-php
 
 # Configure Apache2
 RUN rm -f /var/www/html/index.html
