@@ -11,8 +11,9 @@ This container is running Ubuntu 16.04 with the following tools installed for us
     2. `curl` - For testing APIs
     3. `wget` - For downloading files
     4. `dnsutils` - For testing DNS
-    5. `apache2` - Webserver that the container runs via CMD
-    6. `libapache2-mod-php` - PHP for Apache2
+    5. `telnet` - For testing network connections
+    6. `apache2` - Webserver that the container runs via CMD
+    7. `libapache2-mod-php` - PHP for Apache2
 2. Services
     1. A simple PHP page on port 80 that will show the headers sent to the webserver
 3. Other Stuff
