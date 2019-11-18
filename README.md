@@ -14,6 +14,7 @@ This container is running Ubuntu 18.04 with the following tools installed for us
     5. `telnet` - For testing network connections
     6. `apache2` - Webserver that the container runs via CMD
     7. `libapache2-mod-php` - PHP for Apache2
+    8. `iputils-ping` - Adding the ping command for basic network tests
 2. Services
     1. A simple PHP page on port 80 that will show the container IP and the headers sent to the web server.
 3. Other Stuff
