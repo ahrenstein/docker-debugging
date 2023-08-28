@@ -23,3 +23,16 @@ jobs:
           echo "Pushing container to Docker Hub..."
           docker push ahrenstein/debugging:latest
           echo "Done!"
+      - name: Login to GitHub Container Registry
+        uses: docker/login-action@v2
+        with:
+          registry: ghcr.io
+          username: ${{ github.actor }}
+          password: ${{ secrets.GITHUB_TOKEN }}
+      - name: Build the Docker image for ghcr
+        run: |
+          echo "Building container..."
+          docker build -f Dockerfile -t ghcr.io/ahrenstein/docker-debugging:latest .
+          echo "Pushing container to GitHub Container Registry..."
+          docker push ghcr.io/ahrenstein/docker-debugging:latest
+          echo "Done!"
