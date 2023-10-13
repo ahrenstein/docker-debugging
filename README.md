@@ -4,7 +4,7 @@ This is a super simple container that can be used for debugging directly inside 
 
 Container Tools
 ---------------
-This container is running Ubuntu 18.04 with the following tools installed for use in an interactive shell:
+This container is running Ubuntu 22.04 with the following tools installed for use in an interactive shell:
 
 1. Packages
     1. `vim` - For editing files in the container to adjust tests
@@ -19,6 +19,10 @@ This container is running Ubuntu 18.04 with the following tools installed for us
     1. A simple PHP page on port 80 that will show the container IP and the headers sent to the web server.
 3. Other Stuff
     1. A stripped down version of my usual bash profile.
+
+Architectures
+-------------
+This container is available for `linux/amd64`, and `linux/arm64`
 
 Deployment Examples
 -------------------
@@ -35,7 +39,8 @@ Busybox was too simple for some of the debugging I needed to do. I wanted a cont
 
 Availability
 ------------
-This container is publicly available on [Docker Hub](https://hub.docker.com/r/ahrenstein/debugging)
+All `linux/amd64` versions up to 5.0.0 are publicly available on [Docker Hub](https://hub.docker.com/r/ahrenstein/debugging)  
+All `linux/amd64` and `linux/arm64` versions from 5.0.1 onward are publicly available on [Docker Hub](https://hub.docker.com/r/ahrenstein/debugging) and [GitHub Container Registry](https://github.com/ahrenstein/docker-debugging/pkgs/container/docker-debugging)
 
 Maintainers
 ----------

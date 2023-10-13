@@ -17,4 +17,3 @@ WORKDIR /root/
 # Start the container with apache in the foreground
 EXPOSE 80
 CMD ["/usr/sbin/apache2ctl", "-DFOREGROUND"]
-
