@@ -15,6 +15,7 @@ This container is running Ubuntu 22.04 with the following tools installed for us
     6. `apache2` - Webserver that the container runs via CMD
     7. `libapache2-mod-php` - PHP for Apache2
     8. `iputils-ping` - Adding the ping command for basic network tests
+   9. `net-tools` - Various network tools
 2. Services
     1. A simple PHP page on port 80 that will show the container IP and the headers sent to the web server.
 3. Other Stuff
@@ -29,7 +30,8 @@ Deployment Examples
 There are two deployment examples included with this repo:
 
 1. [docker-compose](deployments/docker-compose.yml) - Deploy locally and listen on port 2000
-2. [Kubernetes](deployments/kubernetes.yml) - Deploy to Kubernetes in the `kube-public` namespace listening on port 80 with no ingress or service
+2. [Kubernetes](deployments/kubernetes.yml) - Deploy to Kubernetes in the `kube-public` namespace listening on port 80 with no ingress or service.
+   1. Additionally, Route 1337 LLC has a [public helm chart](https://helm-charts.route1337.com/) using this container. 
 
 You can also run `docker run -d --name debugging -p2000:80 ahrenstein/debugging:latest` to deploy locally as well.
 
